@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pomodoro Clock</title>
+    <style>
+      .container
+      {
+        background-color: #00b3b3;
+        height: 480px;
+        width: 280px;  
+        padding-top:20px;
+        padding-left:20px;
+        padding-right: 20px;
+        padding-bottom:20px;
+        }
+      .clock
+      {
+        font-size : 30px;
+        font-weight : bold;
+        text-align : center;
+        font-family : "Brush Script MT","Brush Script Std",cursive;
+      }
+      .innerdiv
+      {
+        background-color : white;
+        height: 20px;
+        width: 270px;
+        text-align:center;
+        padding: 70px 0;
+        border: 5px solid #001a1a;
+        font-size : 25px;
+      }
+      .container2
+      {
+        background-color: #00b3b3;
+        height: 200px;
+        width: 270px;
+        text-align:center;
+      }
+      .container3
+      {
+        background-color: #00b3b3;
+        height: 130px;
+        width: 270px;
+      }
+      .part1
+      {
+        background-color: #001a1a;
+        height: 130px;
+        width: 120px;
+        float:left;
+        color : white;
+      }
+      .part2
+      {
+        background-color: #001a1a;
+        height: 130px;
+        width: 120px;
+        float:right;
+        color : white;
+      }
+      .par
+      {
+        display:inline-block;
+        text-align:center;
+      }
+      .button 
+      {
+        background-color: #001a1a; 
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 5px 15px;
+        cursor: pointer;
+      }
+      .button1
+      { 
+        border: none;
+        width : 20px;
+        height : 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 1px 5px;
+        cursor: pointer;
+      }
+      par
+      {
+        font-size : 17px;
+        font-weight : bold;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="clock">- Pomodoro Clock -</div>
+      <div class = "innerdiv">
+        <b id="minute">0</b>
+        <b>:</b>
+        <b id="second">0</b>
+        <br>
+      </div>
+      <div class="container2">
+        <h2 id="heading">-- Session Time --</h2>
+        <hr>
+        <div class="container3">
+        <div class="part1">
+          <h3>Session Time</h3>
+          <par id="session">1</par>
+          <par>Min</par>
+          <br><br>
+          <button id="sessionminus" class="button1"><b>-</b></button>
+          <button id="sessionplus" class="button1"><b>+</b></button>
+        </div>
+        <div class="part2">
+          <h3>Break Time</h3>
+          <par id="break">1</par>
+          <par>Min</par>
+          <br><br>
+          <button id="breakminus" class="button1"><b>-</b></button>
+          <button id="breakplus" class="button1"><b>+</b></button>
+        </div>
+        </div>
+        <hr>
+        <button id="start" class="button">Start</button>
+        <button id="reset" class="button">Reset</button>
+      </div> 
+    </div>
+
+
+
+  </body>
+  <script src = "clock.js">
+    </script>
+</html>
